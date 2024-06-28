@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Clicker Extension",
+    "version": "1.0",
+    "description": "Automatically clicks a specified element on the active page.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+     
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+      }
+    ]
+  }
+  
