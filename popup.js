@@ -3,7 +3,7 @@ document.getElementById('clickButton').addEventListener('click', () => {
       chrome.scripting.executeScript({
         target: {tabId: tabs[0].id},
         function: clickButton,
-        args: ['.ytp-ad-skip-button']  // Pass the Skip Ad button class name here
+        args: ['.ytp-ad-skip-button'] 
       });
     });
   });
